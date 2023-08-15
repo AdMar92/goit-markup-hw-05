@@ -71,12 +71,26 @@ body {
   margin-bottom: 72px;
 }
 
+.menu-border::after {
+  content: "";
+  background-color: var(--color-ocean);
+  height: 4px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 2px;
+  position: absolute;
+}
+
 .flex-photo-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
 }
 
+img {
+  max-width: 100%;
+}
 ul {
   display: flex;
   list-style: none;
@@ -113,6 +127,8 @@ ul {
 }
 .pics-decoration {
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .pics-decoration:hover,
@@ -220,7 +236,9 @@ ul {
 .icons-item-footer:hover,
 .icons-item-footer:focus {
   background: var(--color-green);
-  transition: color var(--transition);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-item-position {
   gap: 16px;
@@ -228,7 +246,9 @@ ul {
 .icons-item:hover,
 .icons-item:focus {
   background: var(--color-ocean);
-  transition: color var(--transition);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link {
   list-style: none;
@@ -277,12 +297,14 @@ ul {
   line-height: 1.5;
   padding: 24px 0;
   display: block;
+  position: relative;
 }
 .menu-style:focus,
 .menu-style:hover {
   color: var(--color-ocean);
   transition: color var(--transition);
 }
+
 .button-color {
   color: var(--color-white-background);
   background-color: var(--color-iris);
@@ -333,7 +355,9 @@ ul {
   border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  transition: color var(--transition);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-color:focus,
@@ -341,7 +365,78 @@ ul {
   background-color: var(--color-ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  transition: color var(--transition);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card {
+  max-width: 30vw;
+}
+
+.portfolio-relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-relative > img {
+  display: block;
+  width: 100%;
+  height: 100;
+  object-fit: cover;
+}
+
+.card-image-description {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(100 100 255 / 0.75);
+  color: #fff;
+  translate: 0 100% 0;
+  transition: translate 250ms;
+}
+.card:hover .card-image-description {
+  translate: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  pointer-events: all;
+  visibility: visible;
+  transition: opacity 250ms;
+}
+.modal-body {
+  position: relative;
+  max-width: 408px;
+  min-height: 584px;
+  margin: auto;
+  background-color: var(--color-modal-background);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+.modal-close {
+  position: absolute;
+  inset: 24px 24px auto auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  fill: var(--accent);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close-icon-items {
+  height: 8px;
+  width: 8px;
+  color: var(--modal-overlay);
 }
 
 .button-style {

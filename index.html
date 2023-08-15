@@ -25,7 +25,9 @@
             <span class="web-color">Web</span>Studio</a
           >
           <ul class="menu-link flex-menu">
-            <li><a class="menu-style" href="./index.html">Studio</a></li>
+            <li>
+              <a class="menu-style menu-border" href="./index.html">Studio</a>
+            </li>
             <li>
               <a class="menu-style" href="./portfolio.html">Portfolio</a>
             </li>
@@ -54,9 +56,22 @@
           <h1 class="header-text title-flex">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button-color button-flex">
+          <button
+            type="button"
+            class="button-color button-flex"
+            data-modal-open
+          >
             <span>Order Service</span>
           </button>
+          <div class="modal is-hidden" data-modal>
+            <div class="modal-body">
+              <button class="modal-close" data-modal-close>
+                <svg class="modal-close-icon-items">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section-style">
