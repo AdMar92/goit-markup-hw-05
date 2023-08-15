@@ -74,9 +74,9 @@ body {
 .menu-border::after {
   content: "";
   background-color: var(--color-ocean);
-  height: 4px;
   width: 100%;
-  bottom: 0px;
+  height: 4px;
+  bottom: -1px;
   left: 0px;
   border-radius: 2px;
   position: absolute;
