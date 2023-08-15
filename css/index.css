@@ -165,11 +165,7 @@ ul {
   text-decoration: none;
   margin-right: 76px;
 }
-.logo-link:hover,
-.logo-link:focus {
-  color: var(--color-ocean);
-  transition: color var(--transition);
-}
+
 .contacts-link {
   text-decoration: none;
   color: var(--color-hero-background);
@@ -406,7 +402,7 @@ ul {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -415,16 +411,17 @@ ul {
   pointer-events: all;
   visibility: visible;
   transition: opacity 250ms;
+  z-index: 2;
 }
 .modal-body {
-  position: relative;
-  max-width: 408px;
-  min-height: 584px;
-  margin: auto;
-  background-color: var(--color-modal-background);
+  width: 408px;
+  height: 584px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 .modal-close {
   position: absolute;
