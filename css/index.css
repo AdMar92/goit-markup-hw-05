@@ -642,11 +642,6 @@ ul {
   height: 24px;
   color: #fff;
 }
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--color-cloud);
-  transition: color var(--transition);
-}
 
 .background-team {
   background: var(--cloud, #f4f4fd);
