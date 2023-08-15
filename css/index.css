@@ -393,6 +393,13 @@ ul {
   color: #fff;
   translate: 0 100% 0;
   transition: translate 250ms;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  padding-bottom: 164px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .card:hover .card-image-description {
   translate: 0;
