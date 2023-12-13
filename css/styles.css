@@ -13,6 +13,9 @@
   --modal-background: #fcfcfc;
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Raleway", sans-serif;
+  --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --tr-duration: 250ms;
+  --transition: var(--tr-duration) var(--tr-function);
 }
 
 * {
@@ -76,6 +79,7 @@ ul {
 .menu-item:focus,
 .menu-item:hover {
   color: var(--OCEAN);
+  transition: var(--transition);
 }
 .container {
   max-width: 1158px;
@@ -120,6 +124,7 @@ ul {
 .address-item:focus,
 .address-item:hover {
   color: var(--OCEAN);
+  transition: var(--transition);
 }
 
 /* -------------SEKCJA PIERWSZA---------------- */
@@ -176,6 +181,7 @@ ul {
 .btn-color:hover,
 .btn-color:focus {
   background: var(--OCEAN);
+  transition: var(--transition);
 }
 
 .btn-text {
@@ -290,6 +296,7 @@ ul {
 .team-icon-link:hover,
 .team-icon-link:focus {
   background-color: var(--OCEAN);
+  transition: var(--transition);
 }
 .team-svg {
   fill: var(--CLOUD);
@@ -325,6 +332,7 @@ ul {
 .cstmr-logo-style:focus {
   border-color: var(--OCEAN);
   color: var(--OCEAN);
+  transition: var(--transition);
 }
 
 .customers-logo {
@@ -364,6 +372,7 @@ ul {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: var(--transition);
 }
 
 .pics-item {
@@ -383,6 +392,7 @@ ul {
 .pics-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: var(--transition);
 }
 
 .pics-name {
@@ -459,6 +469,7 @@ ul {
 .icon-link-footer:hover,
 .icon-link-footer:focus {
   background-color: var(--GREEN);
+  transition: var(--transition);
 }
 
 .footer-svg {
