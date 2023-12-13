@@ -79,6 +79,7 @@ ul {
 .menu-border {
   color: var(--OCEAN);
   position: relative;
+  transition: var(--transition);
 }
 .menu-border::after {
   content: "";
