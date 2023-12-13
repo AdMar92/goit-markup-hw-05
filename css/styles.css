@@ -435,7 +435,7 @@ ul {
   background: var(--IRIS);
   color: var(--CLOUD);
   translate: 0 100% 0;
-  transition: var(--transition);
+  transition: translate 250ms;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 40px;
