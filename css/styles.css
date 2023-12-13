@@ -77,8 +77,10 @@ ul {
   position: relative;
 }
 
-.menu-border::after {
+.menu-border {
   color: var(--OCEAN);
+}
+.menu-border::after {
   content: "";
   background-color: var(--OCEAN);
   width: 100%;
