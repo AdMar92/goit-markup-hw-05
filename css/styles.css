@@ -74,11 +74,11 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
-  position: relative;
 }
 
 .menu-border {
   color: var(--OCEAN);
+  position: relative;
 }
 .menu-border::after {
   content: "";
