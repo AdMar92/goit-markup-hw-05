@@ -90,7 +90,6 @@ ul {
   left: 0px;
   border-radius: 2px;
   position: absolute;
-  transition: var(--transition);
 }
 
 .menu-item:focus,
