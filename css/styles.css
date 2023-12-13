@@ -14,7 +14,7 @@
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Raleway", sans-serif;
   --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --tr-duration: 250ms;
+  --tr-duration: color 250ms;
   --transition: var(--tr-duration) var(--tr-function);
 }
 
@@ -69,12 +69,14 @@ ul {
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .menu-item {
+  color: var(--OCEAN);
   color: var(--NAVY-BLUE);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
   position: relative;
+  transition: var(--transition);
 }
 
 .menu-border::after {
