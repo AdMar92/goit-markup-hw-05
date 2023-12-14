@@ -144,7 +144,7 @@ ul {
   transition: var(--transition);
 }
 
-/* -------------SEKCJA PIERWSZA---------------- */
+/* -------------SEKCJA 1---------------- */
 .section-background {
   background-image: linear-gradient(
       to bottom,
@@ -308,6 +308,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition);
 }
 
 .team-icon-link:hover,
