@@ -348,14 +348,14 @@ ul {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: var(--transition), var(--transition3);
+  transition: var(--transition3), var(--transition);
 }
 
 .cstmr-logo-style:hover,
 .cstmr-logo-style:focus {
   border-color: var(--OCEAN);
   color: var(--OCEAN);
-  transition: var(--transition), var(--transition3);
+  transition: var(--transition3), var(--transition);
 }
 
 .customers-logo {
