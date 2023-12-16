@@ -427,7 +427,7 @@ ul {
   border: 1px solid var(--CORNFLOWER);
   border-top: none;
 }
-.pics-link:hover,
+.pics-link:hover .card-image-description,
 .pics-link:focus .card-image-description {
   transform: translateY(0%);
 }
